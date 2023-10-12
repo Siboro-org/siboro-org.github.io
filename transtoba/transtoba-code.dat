@@ -26,7 +26,7 @@
 	0	4    MANG([^AEIOU]|$)			ᯔᯰ
 	0	4    TANG([^AEIOU]|$)			ᯖᯰ
 	0	4    SANG([^AEIOU]|$)			ᯘᯰ
-	0	4    CANG([^AEIOU]|$)			0063005E
+	0	4    CANG([^AEIOU]|$)			ᯘ᯦ᯰ
 	0	4    YANG([^AEIOU]|$)			ᯛᯰ
 	0	4    LANG([^AEIOU]|$)			ᯞᯰ
 	0	4    HENG([^AEIOU]|$)			ᯂᯩᯰ
@@ -42,7 +42,7 @@
 	0	4    MENG([^AEIOU]|$)			ᯔᯩᯰ
 	0	4    TENG([^AEIOU]|$)			ᯖᯩᯰ
 	0	4    SENG([^AEIOU]|$)			ᯘᯩᯰ
-	0	4    CENG([^AEIOU]|$)			00630065005E
+	0	4    CENG([^AEIOU]|$)			ᯘ᯦ᯩᯰ
 	0	4    YENG([^AEIOU]|$)			ᯛᯩᯰ
 	0	4    LENG([^AEIOU]|$)			ᯞᯩᯰ
 	0	4    HING([^AEIOU]|$)			ᯂᯪᯰ
@@ -58,7 +58,7 @@
 	0	4    MING([^AEIOU]|$)			ᯔᯪᯰ
 	0	4    TING([^AEIOU]|$)			ᯖᯪᯰ
 	0	4    SING([^AEIOU]|$)			ᯘᯪᯰ
-	0	4    CING([^AEIOU]|$)			00630069005E
+	0	4    CING([^AEIOU]|$)			ᯘ᯦ᯪᯰ
 	0	4    YING([^AEIOU]|$)			ᯛᯪᯰ
 	0	4    LING([^AEIOU]|$)			ᯞᯪᯰ
 	0	4    HONG([^AEIOU]|$)			ᯂᯬᯰ
@@ -74,7 +74,7 @@
 	0	4    MONG([^AEIOU]|$)			ᯔᯬᯰ
 	0	4    TONG([^AEIOU]|$)			ᯖᯬᯰ
 	0	4    SONG([^AEIOU]|$)			ᯘᯬᯰ
-	0	4    CONG([^AEIOU]|$)			0063006F005E
+	0	4    CONG([^AEIOU]|$)			ᯘ᯦ᯬᯰ
 	0	4    YONG([^AEIOU]|$)			ᯛᯬᯰ
 	0	4    LONG([^AEIOU]|$)			ᯞᯬᯰ
 	0	4    HUNG([^AEIOU]|$)			ᯂᯮᯰ
@@ -90,7 +90,7 @@
 	0	4    MUNG([^AEIOU]|$)			ᯔᯮᯰ
 	0	4    TUNG([^AEIOU]|$)			ᯎᯮᯰ
 	0	4    SUNG([^AEIOU]|$)			ᯘᯮᯰ
-	0	4    CUNG([^AEIOU]|$)			0043005E
+	0	4    CUNG([^AEIOU]|$)			ᯘ᯦ᯮᯰ
 	0	4    YUNG([^AEIOU]|$)			ᯛᯮᯰ
 	0	4    LUNG([^AEIOU]|$)			ᯞᯮᯰ
 	0	3    NGA					ᯝ
@@ -122,7 +122,7 @@
 	0	2    MA						ᯔ
 	0	2    TA						ᯖ
 	0	2    SA						ᯗ
-	0	2    CA						0063
+	0	2    CA						ᯘ᯦
 	0	2    YA						ᯛ
 	0	2    LA						ᯞ
 	0	2    HE						ᯂᯩ
@@ -138,7 +138,7 @@
 	0	2    ME		ᯔᯩ
 	0	2    TE		ᯖᯩ
 	0	2    SE		ᯘᯩ
-	0	2    CE     00630065
+	0	2    CE     ᯘ᯦ᯩ
 	0	2    YE		ᯛᯩ
 	0	2    LE		ᯞᯩ
 	0	2    HI		ᯂᯪ
@@ -154,7 +154,7 @@
 	0	2    MI		ᯔᯪ
 	0	2    TI		ᯖᯪ
 	0	2    SI		ᯘᯪ
-	0	2    CI         00630069
+	0	2    CI         ᯘ᯦ᯪ
 	0	2    YI		ᯛᯪ
 	0	2    LI		ᯞᯪ
 	0	2    HO		ᯂᯬ
@@ -170,7 +170,7 @@
 	0	2    MO		ᯔᯬ
 	0	2    TO		ᯖᯬ
 	0	2    SO		ᯘᯬ
-	0	2    CO		0063006F
+	0	2    CO		ᯘ᯦ᯬ
 	0	2    YO		ᯛᯬ
 	0	2    LO		ᯞᯬ
 	0	2    HU		ᯂᯮ
@@ -186,7 +186,7 @@
 	0	2    MU		ᯔᯮ
 	0	2    TU		ᯖᯮ
 	0	2    SU		ᯘᯮ
-	0	2    CU         0043
+	0	2    CU         ᯘ᯦ᯮ
 	0	2    YU		ᯛᯮ
 	0	2    LU		ᯞᯮ
 	0	2    NG		ᯝ᯲
@@ -208,7 +208,7 @@
 	0	1    P		ᯇ᯲
 	0	1    R		ᯒ᯲
 	0	1    S		ᯘ᯲
-	0	1    C		0063005C
+	0	1    C		ᯘ᯦᯲
 	0	1    T		ᯖ᯲
 	0	1    U		0041
 	0	1    W		ᯋ᯲

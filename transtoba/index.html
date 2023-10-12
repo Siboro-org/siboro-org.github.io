@@ -3,14 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="NotoSansBatak-Regular.ttf">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Batak&display=swap">
 
   <title>Roman to Batak Toba Transliterator</title>
   <script src="./transtoba2.js"></script>
   <style>
     .custom-font-textarea {
       font-family: 'Noto Sans Batak Regular', sans-serif;
-      /* Replace 'YourFontName' with the actual font name */
+    }
+  </style>
+  <style>
+    textarea {
+      font-family: 'Noto Sans Batak', sans-serif;
     }
   </style>
 </head>
@@ -19,7 +23,7 @@
   <h1>Roman to Batak Toba Transliterator</h1>
   <textarea id="input" rows="10" cols="50"></textarea><br>
   <button id="transliterate">Transliterate</button><br>
-  <textarea id="output" rows="10" cols="50" readonly class="custom-font-textarea"></textarea>
+  <textarea id="output" rows="10" cols="50" readonly></textarea>
   <form name='testForm'>
   </form>
 </body>

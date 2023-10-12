@@ -1,4 +1,4 @@
-        0       1    -         2013
+        0       1    -         –
 	0	1    ^I(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)		0049
 	0	1    ^U(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)		0055
 	-1	1    [AEIOU]I(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)	0049

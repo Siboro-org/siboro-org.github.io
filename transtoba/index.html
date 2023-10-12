@@ -13,6 +13,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <style>
   .bd-placeholder-img {
@@ -119,25 +120,41 @@
 <body>
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  <main class="form-signin w-100 m-auto">
-    <h1 class="h3 mb-3 fw-normal">Transliterator Indonesia ke Batak Toba </h1>
-    <div class="form-floating">
-  <textarea class="form-control" id="input" rows="10" cols="50"></textarea>
-  <label for="floatingInput">Kata-kata/kalimat dalam bahasa Indonesia</label><br>
-  <button class="btn btn-primary w-100 py-2" id="transliterate">Transliterasi</button><br>
-</div>
-<div class="form-floating">
-  <p></p>
-  <textarea class="form-control" id="output" rows="10" cols="50" readonly></textarea>
-
-  <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label><br>
-  <form name='testForm'>
-  </form>
-</div>
-<div>
-  (Aturan transliterasi dipinjam dari <a href="https://github.com/leanderseige/transtoba2">transtoba2</a> yang disesuaikan dengan Unicode)
-</div>
+  
+<main class="form-signin w-100 m-auto">
+  <h1 class="h3 mb-3 fw-normal">Transliterator Indonesia ke Batak Toba</h1>
+  <div class="form-floating">
+    <textarea class="form-control" id="input" rows="10" cols="50" style="width: 100%;"></textarea>
+    <label for="floatingInput">Kata-kata/kalimat dalam bahasa Indonesia</label><br>
+  <button class="btn btn-danger w-50 py-1" id="clearInput">Hapus</button><button class="btn btn-primary w-50 py-1" id="transliterate">Transliterasi</button><br>
+  </div>
+  <div class="form-floating">
+    <p></p>
+    <textarea class="form-control" id="output" rows="10" cols="50" style="width: 100%;" readonly></textarea>
+    <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label><br>
+    <button class="btn btn-secondary w-100 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
+  </div>
+  <div><p>
+    <br>
+    (Aturan transliterasi dipinjam dari <a href="https://github.com/leanderseige/transtoba2">transtoba2</a> yang disesuaikan dengan Unicode)
+  </p>
+  </div>
 </main>
+
+<script>
+  document.getElementById("clearInput").addEventListener("click", function () {
+    const inputTextArea = document.getElementById("input");
+    inputTextArea.value = ""; // Clear the content of the input textarea
+  });
+
+  document.getElementById("copyToClipboard").addEventListener("click", function () {
+    const outputTextArea = document.getElementById("output");
+    outputTextArea.select();
+    document.execCommand("copy");
+    alert("Teks berhasil disalin ke clipboard!");
+  });
+</script>
+
 
 
 

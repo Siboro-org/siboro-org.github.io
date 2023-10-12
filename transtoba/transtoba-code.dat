@@ -1,4 +1,4 @@
-        0       1    -         2013
+        0       1    -         -
 	0	1    ^I(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)		ᯤ
 	0	1    ^U(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)		ᯥ
 	-1	1    [AEIOU]I(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)	ᯤ
@@ -46,7 +46,7 @@
 	0	4    YENG([^AEIOU]|$)			ᯛᯩᯰ
 	0	4    LENG([^AEIOU]|$)			ᯞᯩᯰ
 	0	4    HING([^AEIOU]|$)			ᯂᯪᯰ
-	0	4    HING([^AEIOU]|$)			006B0069005E
+	0	4    HING([^AEIOU]|$)			ᯂᯪᯰ
 	0	4    BING([^AEIOU]|$)			ᯅᯪᯰ
 	0	4    PING([^AEIOU]|$)			ᯇᯪᯰ
 	0	4    NING([^AEIOU]|$)			ᯉᯪᯰ
@@ -62,7 +62,7 @@
 	0	4    YING([^AEIOU]|$)			ᯛᯪᯰ
 	0	4    LING([^AEIOU]|$)			ᯞᯪᯰ
 	0	4    HONG([^AEIOU]|$)			ᯂᯬᯰ
-	0	4    HONG([^AEIOU]|$)			ᯂᯬᯰ
+	0	4    KONG([^AEIOU]|$)			ᯂᯬᯰ
 	0	4    BONG([^AEIOU]|$)			ᯅᯬᯰ
 	0	4    PONG([^AEIOU]|$)			ᯇᯬᯰ
 	0	4    NONG([^AEIOU]|$)			ᯉᯬᯰ

@@ -14,7 +14,7 @@
 	0	5    NGUNG([^AEIOU]|$)			ᯝᯮᯰ
 	0	5    NYUNG([^AEIOU]|$)			ᯠᯮᯰ
 	0	4    HANG([^AEIOU]|$)			ᯂᯰ
-	0	4    KANG([^AEIOU]|$)			006B005E
+	0	4    KANG([^AEIOU]|$)			ᯂᯰ
 	0	4    BANG([^AEIOU]|$)			ᯅᯰ
 	0	4    PANG([^AEIOU]|$)			ᯇᯰ
 	0	4    NANG([^AEIOU]|$)			ᯉᯰ
@@ -30,7 +30,7 @@
 	0	4    YANG([^AEIOU]|$)			ᯛᯰ
 	0	4    LANG([^AEIOU]|$)			ᯞᯰ
 	0	4    HENG([^AEIOU]|$)			ᯂᯩᯰ
-	0	4    KENG([^AEIOU]|$)			006B0065005E
+	0	4    KENG([^AEIOU]|$)			ᯂᯩᯰ
 	0	4    BENG([^AEIOU]|$)			ᯅᯩᯰ
 	0	4    PENG([^AEIOU]|$)			ᯇᯩᯰ
 	0	4    NENG([^AEIOU]|$)			ᯉᯩᯰ
@@ -62,7 +62,7 @@
 	0	4    YING([^AEIOU]|$)			ᯛᯪᯰ
 	0	4    LING([^AEIOU]|$)			ᯞᯪᯰ
 	0	4    HONG([^AEIOU]|$)			ᯂᯬᯰ
-	0	4    HONG([^AEIOU]|$)			006B006F005E
+	0	4    HONG([^AEIOU]|$)			ᯂᯬᯰ
 	0	4    BONG([^AEIOU]|$)			ᯅᯬᯰ
 	0	4    PONG([^AEIOU]|$)			ᯇᯬᯰ
 	0	4    NONG([^AEIOU]|$)			ᯉᯬᯰ
@@ -78,7 +78,7 @@
 	0	4    YONG([^AEIOU]|$)			ᯛᯬᯰ
 	0	4    LONG([^AEIOU]|$)			ᯞᯬᯰ
 	0	4    HUNG([^AEIOU]|$)			ᯂᯮᯰ
-	0	4    KUNG([^AEIOU]|$)			004B005E
+	0	4    KUNG([^AEIOU]|$)			ᯂᯮᯰ
 	0	4    BUNG([^AEIOU]|$)			ᯅᯮᯰ
 	0	4    PUNG([^AEIOU]|$)			ᯇᯮᯰ
 	0	4    NUNG([^AEIOU]|$)			ᯉᯮᯰ
@@ -126,7 +126,7 @@
 	0	2    YA						ᯛ
 	0	2    LA						ᯞ
 	0	2    HE						ᯂᯩ
-	0	2    KE						006B0065
+	0	2    KE						ᯂᯩ
 	0	2    BE						ᯅᯩ
 	0	2    PE						ᯇᯩ
 	0	2    NE						ᯉᯩ
@@ -142,7 +142,7 @@
 	0	2    YE		ᯛᯩ
 	0	2    LE		ᯞᯩ
 	0	2    HI		ᯂᯪ
-	0	2    KI		006B0069
+	0	2    KI		ᯂᯪ
 	0	2    BI		ᯅᯪ
 	0	2    PI		ᯇᯪ
 	0	2    NI		ᯉᯪ
@@ -158,7 +158,7 @@
 	0	2    YI		ᯛᯪ
 	0	2    LI		ᯞᯪ
 	0	2    HO		ᯂᯬ
-	0	2    KO		006B006F
+	0	2    KO		ᯂᯬ
 	0	2    BO		ᯅᯬ
 	0	2    PO		ᯇᯬ
 	0	2    NO		ᯉᯬ
@@ -174,7 +174,7 @@
 	0	2    YO		ᯛᯬ
 	0	2    LO		ᯞᯬ
 	0	2    HU		ᯂᯮ
-	0	2    KU		004B
+	0	2    KU		ᯂᯮ
 	0	2    BU		ᯅᯮ
 	0	2    PU		ᯇᯮ
 	0	2    NU		ᯉᯮ
@@ -200,7 +200,7 @@
 	0	1    H		ᯂ᯲
 	0	1    I		ᯀᯪ
 	0	1    J		ᯐ᯲
-	0	1    K		006B005C
+	0	1    K		ᯂ᯲
 	0	1    L		ᯞ᯲
 	0	1    M		ᯔ᯲
 	0	1    N		ᯉ᯲
@@ -210,6 +210,6 @@
 	0	1    S		ᯘ᯲
 	0	1    C		ᯘ᯦᯲
 	0	1    T		ᯖ᯲
-	0	1    U		0041
+	0	1    U		ᯀᯮ
 	0	1    W		ᯋ᯲
 	0	1    Y		ᯛ᯲

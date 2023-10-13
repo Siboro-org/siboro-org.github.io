@@ -25,18 +25,10 @@ async function actionTextInMain() {
 
 	let input = document.getElementById('input').value;
 	let outputwithspace = "";
-	if(outputwithspace=="withspace") { 
-		console.log("outputwithspace: true");
-	} else {
-		console.log("outputwithspace: false");
-	}
+		console.log("outputwithspace: "+outputwithspace);
 	outputwithspace = document.getElementById('outputwithspace').value;
 	let output = document.getElementById('output');
-	if(outputwithspace=="withspace") { 
-		console.log("outputwithspace (after getting the value from form): true");
-	} else {
-		console.log("outputwithspace (after getting the value from form): false");
-	}
+		console.log("outputwithspace (after getting the value from form): "+outputwithspace);
 
 	//console.log("actionTextInMain: input is " + input);
 

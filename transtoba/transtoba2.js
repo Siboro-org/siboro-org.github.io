@@ -24,15 +24,15 @@ async function actionTextInMain() {
 	console.clear();
 
 	let input = document.getElementById('input').value;
-	let outputwithspace = false;
-	if(outputwithspace) { 
+	let outputwithspace = "";
+	if(outputwithspace=="withspace") { 
 		console.log("outputwithspace: true");
 	} else {
 		console.log("outputwithspace: false");
 	}
 	outputwithspace = document.getElementById('outputwithspace').value;
 	let output = document.getElementById('output');
-	if(outputwithspace) { 
+	if(outputwithspace=="withspace") { 
 		console.log("outputwithspace (after getting the value from form): true");
 	} else {
 		console.log("outputwithspace (after getting the value from form): false");

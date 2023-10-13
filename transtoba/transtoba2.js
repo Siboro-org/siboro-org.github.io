@@ -28,7 +28,11 @@ async function actionTextInMain() {
 	outputwithspace = document.getElementById('outputwithspace').value;
 	let output = document.getElementById('output');
 
-	console.log("outputwithspace: "+outputwithspace);
+	if(outputwithspace) { 
+		console.log("outputwithspace: true");
+	} else {
+		console.log("outputwithspace: false");
+	}
 
 	//console.log("actionTextInMain: input is " + input);
 

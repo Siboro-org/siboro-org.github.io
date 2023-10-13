@@ -25,7 +25,7 @@ async function actionTextInMain() {
 
 	let input = document.getElementById('input').value;
 	let outputwithspace = false;
-	let outputwithspace = document.getElementById('outputwithspace').value;
+	outputwithspace = document.getElementById('outputwithspace').value;
 	let output = document.getElementById('output');
 
 	console.log("outputwithspace: "+outputwithspace);

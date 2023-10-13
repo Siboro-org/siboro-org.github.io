@@ -196,7 +196,7 @@
 	0	1    D		ᯑ᯲
 	0	1    E		ᯀᯩ
 	0	1    G		ᯎ᯲
-	-1	1    [AEIOU]H([^AEIOU]|$)	xxx
+	-1	1    [AEIOU]H([^AEIOU]|$)	 ᯱ
 	0	1    H		ᯂ᯲
 	0	1    I		ᯀᯪ
 	0	1    J		ᯐ᯲

@@ -104,6 +104,18 @@
 
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Batak&display=swap">
+  <style>
+    @font-face {
+        font-family: 'Batak Unicode Regular';
+        src: url('Batak-Unicode-Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .custom-font-textarea {
+        font-family: 'Batak Unicode Regular', sans-serif;
+    }
+</style>
 
   <title>Transliterator Indonesia ke Batak Toba</title>
   <script src="./transtoba2.js"></script>
@@ -141,13 +153,36 @@
 
   <button class="btn btn-danger w-50 py-1" id="clearInput">Hapus</button><button class="btn btn-primary w-50 py-1" id="transliterate">Transliterasi</button><br>
   </div>
-  <div class="form-floating">
+  <div>
     <p></p>
+    <label for="fontSelector">Pilih Font:</label>
+    <select class="form-select form-select-sm" id="fontSelector" onchange="changeFont()">
+        <option value="Noto Sans Batak">Noto Sans Batak (Google)</option>
+        <option value="Batak Unicode Regular">Batak Unicode Regular (Uli KozokUli Kozok)</option>
+        <!-- Add more font options as needed -->
+    </select>
+  </div>
+  <div class="form-floating">
     <textarea class="form-control" id="output" rows="10" cols="50" style="width: 100%;" readonly></textarea>
     <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label><br>
+
+  <script>
+    // Function to change the font of the textarea based on the selected option
+    function changeFont() {
+        const fontSelector = document.getElementById("fontSelector");
+        const selectedFont = fontSelector.value;
+        //const inputTextArea = document.getElementById("input");
+        const outputTextArea = document.getElementById("output");
+
+        //inputTextArea.style.fontFamily = selectedFont;
+        outputTextArea.style.fontFamily = selectedFont;
+    }
+</script>
+
     <p id="copyresult"></p>
     <button class="btn btn-secondary w-100 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
   </div>
+  
   <div><p>
     <br>
     (Aturan transliterasi dipinjam dari <a href="https://github.com/leanderseige/transtoba2">transtoba2</a> yang disesuaikan dengan Unicode)

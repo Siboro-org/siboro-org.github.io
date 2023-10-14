@@ -28,10 +28,10 @@ async function actionTextInMain() {
 	const outputwithspace = document.getElementById("outputwithspace");
 	if (outputwithspace.checked) {
 		toggle_whitespaces = false;
-		console.log("outputwithspace (after getting the value from form): "+outputwithspace.value);
+		console.log("Leave spaces");
 	} else {
 		toggle_whitespaces = true;
-		console.log("outputwithspace is not checked");
+		console.log("Remove spaces");
 	}
 	let output = document.getElementById('output');
 

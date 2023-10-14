@@ -24,11 +24,14 @@ async function actionTextInMain() {
 	console.clear();
 
 	let input = document.getElementById('input').value;
-	let outputwithspace = "";
-		console.log("outputwithspace: "+outputwithspace);
-	outputwithspace = document.getElementById('outputwithspace').value;
+	//outputwithspace = document.getElementById('outputwithspace').value;
+	const outputwithspace = document.getElementById("outputwithspace");
+	if (outputwithspace.checked) {
+		console.log("outputwithspace (after getting the value from form): "+outputwithspace.value);
+	} else {
+		console.log("outputwithspace is not checked");
+	}
 	let output = document.getElementById('output');
-		console.log("outputwithspace (after getting the value from form): "+outputwithspace);
 
 	//console.log("actionTextInMain: input is " + input);
 

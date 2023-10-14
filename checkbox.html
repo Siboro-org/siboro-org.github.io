@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Example</title>
+</head>
+<body>
+    <h1>Checkbox Example</h1>
+    
+    <label>
+        <input type="checkbox" id="checkbox1" value="Option 1"> Option 1
+    </label>
+    
+    <br>
+    
+    <label>
+        <input type="checkbox" id="checkbox2" value="Option 2"> Option 2
+    </label>
+
+    <br>
+    
+    <button onclick="getCheckboxValues()">Get Values</button>
+
+    <p id="result"></p>
+
+    <script>
+        function getCheckboxValues() {
+            const checkbox1 = document.getElementById("checkbox1");
+            const checkbox2 = document.getElementById("checkbox2");
+            const result = document.getElementById("result");
+
+            const values = [];
+
+            if (checkbox1.checked) {
+                values.push(checkbox1.value);
+            }
+
+            if (checkbox2.checked) {
+                values.push(checkbox2.value);
+            }
+
+            if (values.length > 0) {
+                result.textContent = "Selected values: " + values.join(", ");
+            } else {
+                result.textContent = "No checkboxes selected.";
+            }
+        }
+    </script>
+</body>
+</html>

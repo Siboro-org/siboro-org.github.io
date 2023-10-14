@@ -145,6 +145,7 @@
     <p></p>
     <textarea class="form-control" id="output" rows="10" cols="50" style="width: 100%;" readonly></textarea>
     <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label><br>
+    <p id="copyresult"></p>
     <button class="btn btn-secondary w-100 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
   </div>
   <div><p>
@@ -160,11 +161,17 @@
     inputTextArea.value = ""; // Clear the content of the input textarea
   });
 
+  function displayResult(resultText) {
+            const resultElement = document.getElementById("copyresult");
+            resultElement.innerHTML = resultText;
+  }
+
   document.getElementById("copyToClipboard").addEventListener("click", function () {
     const outputTextArea = document.getElementById("output");
     outputTextArea.select();
     document.execCommand("copy");
-    alert("Teks berhasil disalin ke clipboard!");
+    displayResult("Teks berhasil disalin ke clipboard!");
+    //alert("Teks berhasil disalin ke clipboard!");
   });
 </script>
 

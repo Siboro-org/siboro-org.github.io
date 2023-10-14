@@ -164,6 +164,9 @@
   function displayResult(resultText) {
             const resultElement = document.getElementById("copyresult");
             resultElement.innerHTML = resultText;
+            setTimeout(() => {
+                resultElement.innerHTML = '';
+            }, 1000);
   }
 
   document.getElementById("copyToClipboard").addEventListener("click", function () {

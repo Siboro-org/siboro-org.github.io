@@ -27,8 +27,10 @@ async function actionTextInMain() {
 	//outputwithspace = document.getElementById('outputwithspace').value;
 	const outputwithspace = document.getElementById("outputwithspace");
 	if (outputwithspace.checked) {
+		toggle_whitespaces = false;
 		console.log("outputwithspace (after getting the value from form): "+outputwithspace.value);
 	} else {
+		toggle_whitespaces = true;
 		console.log("outputwithspace is not checked");
 	}
 	let output = document.getElementById('output');
@@ -332,7 +334,7 @@ async function apply_transtoba() {
 			}
 		}
 
-		if (!toggle_whitespaces) {
+		if (toggle_whitespaces) {
 			out = out.replaceAll(" ", "");
 		}
 	} catch (error) {

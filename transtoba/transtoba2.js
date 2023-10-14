@@ -1,6 +1,6 @@
 /******************************************************************************
   transtoba2.java (https://github.com/leanderseige/transtoba2) converted to JavaScript
-  by Arnold Siboro
+  by Arnold Siboro in October 2023
  ******************************************************************************/
 
 let isHex = false;

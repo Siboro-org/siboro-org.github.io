@@ -1,3 +1,8 @@
+/******************************************************************************
+  transtoba2.java (https://github.com/leanderseige/transtoba2) converted to JavaScript
+  by Arnold Siboro
+ ******************************************************************************/
+
 let isHex = false;
 let map_prefilter_id = new Map();
 let map_prefilter_de = new Map();

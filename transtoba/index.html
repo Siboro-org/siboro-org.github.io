@@ -112,6 +112,13 @@
         font-style: normal;
     }
 
+    @font-face {
+            font-family: 'Pangururan';
+            src: url('Pangururan.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
     .custom-font-textarea {
         font-family: 'Batak Unicode Regular', sans-serif;
     }
@@ -158,7 +165,8 @@
     <label for="fontSelector">Pilih Font:</label>
     <select class="form-select form-select-sm" id="fontSelector" onchange="changeFont()">
         <option value="Noto Sans Batak">Noto Sans Batak (Google)</option>
-        <option value="Batak Unicode Regular">Batak Unicode Regular (Uli KozokUli Kozok)</option>
+        <option value="Batak Unicode Regular">Batak Unicode Regular (by Uli Kozok)</option>
+        <option value="Pangururan">Pangururan (by Michael Everson)</option>
         <!-- Add more font options as needed -->
     </select>
   </div>

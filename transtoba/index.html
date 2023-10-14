@@ -167,20 +167,21 @@
 
   <button class="btn btn-danger w-50 py-1" id="clearInput">Hapus</button><button class="btn btn-primary w-50 py-1" id="transliterate">Transliterasi</button><br>
   </div>
-  <div>
-    <p></p>
-    <label for="fontSelector">Pilih Font:</label>
-    <select class="form-select form-select-sm" id="fontSelector" onchange="changeFont()">
-        <option value="Noto Sans Batak">Noto Sans Batak (Google)</option>
-        <option value="Batak Unicode Regular">Batak Unicode Regular (by Uli Kozok)</option>
-        <option value="Pangururan">Pangururan (by Michael Everson)</option>
-        <option value="Batak Toba">Batak Toba (by Jonson Sirait)</option><!-- https://aksaradinusantara.com/fonta/batak-toba.font -->
-        <!-- Add more font options as needed -->
-    </select>
-  </div>
+  <p></p>
   <div class="form-floating">
     <textarea class="form-control" id="output" rows="10" cols="50" style="width: 100%;" readonly></textarea>
-    <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label><br>
+    <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label>
+
+    <div>
+      <label for="fontSelector">Pilih Font:</label>
+      <select class="form-select form-select-sm" id="fontSelector" onchange="changeFont()">
+          <option value="Noto Sans Batak">Noto Sans Batak (Google)</option>
+          <option value="Batak Unicode Regular">Batak Unicode Regular (by Uli Kozok)</option>
+          <option value="Pangururan">Pangururan (by Michael Everson)</option>
+          <option value="Batak Toba">Batak Toba (by Jonson Sirait)</option><!-- https://aksaradinusantara.com/fonta/batak-toba.font -->
+          <!-- Add more font options as needed -->
+      </select>
+    </div>
 
   <script>
     // Function to change the font of the textarea based on the selected option

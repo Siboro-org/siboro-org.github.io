@@ -105,10 +105,10 @@
 	0	3    NYU					ᯠᯮ
 	0	3    ANG([^AEIOU]|$)			ᯀᯰ
 	0	3    ENG([^AEIOU]|$)			ᯀᯩᯰ
-	0	3    ING([^AEIOU]|$)			ᯤᯰ
 	0	3    ING([^AEIOU]|$)			ᯀᯪᯰ
+	0	3    ING([^AEIOU]|$)			ᯤᯰ
 	0	3    ONG([^AEIOU]|$)			ᯀᯬᯰ
-	0	3    UNG([^AEIOU]|$)			ᯥᯰ
+	0	3    UNG([^AEIOU]|$)			ᯀᯮᯰ
 	0	2    HA						ᯂ
 	0	2    KA						ᯂ
 	0	2    BA						ᯅ

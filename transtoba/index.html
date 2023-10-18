@@ -12,95 +12,95 @@
   <meta name="generator" content="Hugo 0.118.2">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
     }
-  }
 
-  .b-example-divider {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-  }
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
 
-  .b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
-  }
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-  .bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-  }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-  .nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-  }
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-  .nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-  .btn-bd-primary {
-    --bd-violet-bg: #712cf9;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8;
-  }
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-  .bd-mode-toggle {
-    z-index: 1500;
-  }
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
 
-  .bd-mode-toggle .dropdown-menu .active .bi {
-    display: block !important;
-  }
-</style>
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
 
-<style>
-  /* Override Bootstrap styles for textarea */
-  textarea.form-control {
-    width: 100%;
-    /* Other custom styles if needed */
-  }
-</style>
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+
+  <style>
+    /* Override Bootstrap styles for textarea */
+    textarea.form-control {
+      width: 100%;
+      /* Other custom styles if needed */
+    }
+  </style>
 
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Batak&display=swap">
@@ -108,37 +108,37 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Flex&display=swap">
   <style>
     @font-face {
-        font-family: 'Batak Unicode Regular';
-        src: url('Batak-Unicode-Regular.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
+      font-family: 'Batak Unicode Regular';
+      src: url('Batak-Unicode-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
     }
 
     @font-face {
-            font-family: 'Pangururan';
-            src: url('Pangururan.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
+      font-family: 'Pangururan';
+      src: url('Pangururan.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'Kurinto Book Regular';
-            src: url('KurintoBook-Rg.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
+    @font-face {
+      font-family: 'Kurinto Book Regular';
+      src: url('KurintoBook-Rg.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-        @font-face {
-            font-family: 'Equator Petite Edition';
-            src: url('EquatorPetiteEdition.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
+    @font-face {
+      font-family: 'Equator Petite Edition';
+      src: url('EquatorPetiteEdition.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
     .custom-font-textarea {
-        font-family: 'Batak Unicode Regular', sans-serif;
+      font-family: 'Batak Unicode Regular', sans-serif;
     }
-</style>
+  </style>
 
   <title>Transliterator Indonesia ke Batak Toba</title>
   <script src="./transtoba2.js"></script>
@@ -152,38 +152,39 @@
       font-family: 'Noto Sans Batak', sans-serif;
     }
   </style>
-    <link href="sign-in.css" rel="stylesheet">
+  <link href="sign-in.css" rel="stylesheet">
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5341101936519197"
-     crossorigin="anonymous"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5341101936519197"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  
-<main class="form-signin w-100 m-auto">
-  <h1 class="h3 mb-3 fw-normal">Transliterator Indonesia ke Batak Toba</h1>
-  <div class="form-floating">
-    <textarea class="form-control" id="input" rows="10" cols="50" style="width: 100%;"></textarea>
-    <label for="floatingInput">Kata-kata/kalimat dalam bahasa Indonesia</label><br>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="outputwithspace" value="yes">
-      <label class="form-check-label" for="flexCheckDefault">Tulis Surat Batak dengan spasi</label>
+  <main class="form-signin w-100 m-auto">
+    <h1 class="h3 mb-3 fw-normal">Transliterator Indonesia ke Batak Toba</h1>
+    <div class="form-floating">
+      <textarea class="form-control" id="input" rows="10" cols="50" style="width: 100%;"></textarea>
+      <label for="floatingInput">Kata-kata/kalimat dalam bahasa Indonesia</label><br>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="outputwithspace" value="yes">
+        <label class="form-check-label" for="flexCheckDefault">Tulis Surat Batak dengan spasi</label>
+      </div>
+
+      <button class="btn btn-danger w-50 py-1" id="clearInput">Hapus</button><button class="btn btn-primary w-50 py-1"
+        id="transliterate">Transliterasi</button><br>
     </div>
+    <p></p>
+    <div class="form-floating">
+      <textarea class="form-control" id="output" rows="10" cols="50" style="width: 100%;" readonly></textarea>
+      <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label>
 
-  <button class="btn btn-danger w-50 py-1" id="clearInput">Hapus</button><button class="btn btn-primary w-50 py-1" id="transliterate">Transliterasi</button><br>
-  </div>
-  <p></p>
-  <div class="form-floating">
-    <textarea class="form-control" id="output" rows="10" cols="50" style="width: 100%;" readonly></textarea>
-    <label for="floatingPassword">Hasil transliterasi ke Surat Batak</label>
-
-    <div>
-      <label for="fontSelector">Pilih Font:</label>
-      <select class="form-select form-select-sm" id="fontSelector" onchange="changeFont()">
+      <div>
+        <label for="fontSelector">Pilih Font:</label>
+        <select class="form-select form-select-sm" id="fontSelector" onchange="changeFont()">
           <option value="Noto Sans Batak">Noto Sans Batak (Google)</option>
           <option value="Roboto">Roboto (Google)</option>
           <option value="Roboto Flex">Roboto Flex (Google)</option>
@@ -191,55 +192,56 @@
           <option value="Pangururan">Pangururan (by Michael Everson)</option>
           <option value="Kurinto Book Regular">Kurinto (by Kurinto.com)</option>
           <option value="Equator Petite Edition">Equator Petite Edition (by Rizal Leksono)</option>
-      </select>
+        </select>
+      </div>
+
+      <script>
+        // Function to change the font of the textarea based on the selected option
+        function changeFont() {
+          const fontSelector = document.getElementById("fontSelector");
+          const selectedFont = fontSelector.value;
+          //const inputTextArea = document.getElementById("input");
+          const outputTextArea = document.getElementById("output");
+
+          //inputTextArea.style.fontFamily = selectedFont;
+          outputTextArea.style.fontFamily = selectedFont;
+        }
+      </script>
+
+      <p id="copyresult"></p>
+      <button class="btn btn-secondary w-100 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
     </div>
 
+    <div>
+      <p>
+        <br>
+        (Lihat informasi mengenai transliterator ini di <a href="informasi.html">halaman Informasi</a>)
+      </p>
+    </div>
+  </main>
+
   <script>
-    // Function to change the font of the textarea based on the selected option
-    function changeFont() {
-        const fontSelector = document.getElementById("fontSelector");
-        const selectedFont = fontSelector.value;
-        //const inputTextArea = document.getElementById("input");
-        const outputTextArea = document.getElementById("output");
+    document.getElementById("clearInput").addEventListener("click", function () {
+      const inputTextArea = document.getElementById("input");
+      inputTextArea.value = ""; // Clear the content of the input textarea
+    });
 
-        //inputTextArea.style.fontFamily = selectedFont;
-        outputTextArea.style.fontFamily = selectedFont;
+    function displayResult(resultText) {
+      const resultElement = document.getElementById("copyresult");
+      resultElement.innerHTML = resultText;
+      setTimeout(() => {
+        resultElement.innerHTML = '';
+      }, 1000);
     }
-</script>
 
-    <p id="copyresult"></p>
-    <button class="btn btn-secondary w-100 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
-  </div>
-  
-  <div><p>
-    <br>
-    (Lihat informasi mengenai transliterator ini di <a href="informasi.html">halaman Informasi</a>)
-  </p>
-  </div>
-</main>
-
-<script>
-  document.getElementById("clearInput").addEventListener("click", function () {
-    const inputTextArea = document.getElementById("input");
-    inputTextArea.value = ""; // Clear the content of the input textarea
-  });
-
-  function displayResult(resultText) {
-            const resultElement = document.getElementById("copyresult");
-            resultElement.innerHTML = resultText;
-            setTimeout(() => {
-                resultElement.innerHTML = '';
-            }, 1000);
-  }
-
-  document.getElementById("copyToClipboard").addEventListener("click", function () {
-    const outputTextArea = document.getElementById("output");
-    outputTextArea.select();
-    document.execCommand("copy");
-    displayResult("Teks berhasil disalin ke clipboard!");
-    //alert("Teks berhasil disalin ke clipboard!");
-  });
-</script>
+    document.getElementById("copyToClipboard").addEventListener("click", function () {
+      const outputTextArea = document.getElementById("output");
+      outputTextArea.select();
+      document.execCommand("copy");
+      displayResult("Teks berhasil disalin ke clipboard!");
+      //alert("Teks berhasil disalin ke clipboard!");
+    });
+  </script>
 
 
 

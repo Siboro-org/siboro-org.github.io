@@ -1,9 +1,10 @@
 @font-face {
-    font-family: 'Aksara Batak';
-    src: local("ᯅᯖᯂ᯳"), url('NotoSansBatak.eot'), url('NotoSansBatak.eot?#iefix') format('embedded-opentype'), url('NotoSansBatak.woff') format('woff'), url('NotoSansBatak.ttf') format('truetype');
+    font-family: 'Noto Sans Batak';
+    src: url('https://fonts.googleapis.com/css?family=Noto+Sans+Batak&display=swap');
     font-weight: normal;
     font-style: normal;
 }
+
 
 .main_ta {
     font-family: 'Noto Sans Batak';

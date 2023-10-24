@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Assuming you have a button with id "retrieveTextButton"
     const retrieveTextButton = document.getElementById("generateImage");
     const outputtext = document.getElementById("output");
+    const downloadLink = document.getElementById("downloadLink");
 
     retrieveTextButton.addEventListener("click", function () {
         const bataktext = outputtext.value;
@@ -78,5 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Display the generated image
         outputImage.src = dataURL;
+
+        // Set the download link href to the data URL
+        downloadLink.href = dataURL;
+
+        // Show the download link
+        downloadLink.style.display = "block";
     });
 });

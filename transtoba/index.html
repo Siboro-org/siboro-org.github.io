@@ -244,8 +244,11 @@
       <button class="btn btn-secondary w-50 py-1" id="generateImage">Tampilkan image</button><button
         class="btn btn-secondary w-50 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
 
-      <canvas id="textCanvas" width="400" height="100"></canvas>
-      <img id="outputImage" style="display: none;" />
+      <canvas id="textCanvas" width="400" height="100" style="display: none;"></canvas>
+
+      <a id="downloadLink" style="display: none;" download="batak_image.png">
+        <img id="outputImage" style="cursor: pointer;" />
+    </a>
     </div>
 
     <div>

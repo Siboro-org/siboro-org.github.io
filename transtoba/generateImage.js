@@ -13,15 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const bataktext = outputtext.value;
 
         //const text = bataktext; // The Batak text
-        console.log("Text to be made image: " + bataktext);
+        console.log("text to be made image: " + bataktext);
         const fontSize = 30;
-
-        
-        //const fontFamily = "Noto Sans Batak"; // Set the font-family
         const fontFamily = document.getElementById("fontSelector");
         const selectedFontFamily = fontFamily.value;
-
-        console.log("Font selected: " + selectedFontFamily);
+        console.log("font selected: " + selectedFontFamily);
         const textColor = "black";
 
         // Set font properties

@@ -166,6 +166,7 @@
 
   <title>Transliterator Indonesia ke Batak Toba</title>
   <script src="./transtoba2.js"></script>
+  <script src="./generateImage.js"></script>
   <style>
     .custom-font-textarea {
       font-family: 'Noto Sans Batak Regular', sans-serif;
@@ -175,7 +176,12 @@
     textarea {
       font-family: 'Noto Sans Batak', sans-serif;
     }
+
+    body {
+      font-family: 'Noto Sans Batak', sans-serif;
+    }
   </style>
+
   <link href="sign-in.css" rel="stylesheet">
 
   <!-- Google AdSense -->
@@ -235,7 +241,11 @@
       </script>
 
       <p id="copyresult"></p>
-      <button class="btn btn-secondary w-100 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
+      <button class="btn btn-secondary w-50 py-1" id="generateImage">Tampilkan image</button><button
+        class="btn btn-secondary w-50 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
+
+      <canvas id="textCanvas" width="400" height="100"></canvas>
+      <img id="outputImage" style="display: none;" />
     </div>
 
     <div>

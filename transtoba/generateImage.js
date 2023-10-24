@@ -19,10 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
         
         //const fontFamily = "Noto Sans Batak"; // Set the font-family
         const fontFamily = document.getElementById("fontSelector");
+        const selectedFontFamily = fontFamily.value;
+
+        console.log("Font selected: " + bataktext);
         const textColor = "black";
 
         // Set font properties
-        ctx.font = `${fontSize}px ${fontFamily}`;
+        ctx.font = `${fontSize}px ${selectedFontFamily}`;
         ctx.fillStyle = textColor;
 
         // Clear the canvas

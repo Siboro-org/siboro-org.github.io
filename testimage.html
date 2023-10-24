@@ -6,17 +6,19 @@
     <!-- Add the Google Fonts API link for Noto Sans Batak -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Batak&display=swap">
 
-  <style>
-    body {
-      font-family: 'Noto Sans Batak', sans-serif;
-    }
-  </style>
+    <style>
+        body {
+            font-family: 'Noto Sans Batak', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h2>ᯘᯞᯮᯂᯮᯖ᯲ᯉ</h2>
     <canvas id="textCanvas" width="400" height="200"></canvas>
-    <button id="generateImage">Generate Image</button>
-    <img id="outputImage" style="display: none;" />
+    <textarea id="output" rows="4" cols="50">ᯘᯞᯮᯂᯮᯖ᯲ᯉ This is a longer text that should be split into lines to fit the canvas width.</textarea>
+    <a id="downloadLink" style="display: none;" download="batak_image.png">
+        <img id="outputImage" style="cursor: pointer;" />
+    </a>
     <script src="script.js"></script>
 </body>
 </html>

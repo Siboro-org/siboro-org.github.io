@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedFontFamily = fontFamily.value;
         console.log("font selected: " + selectedFontFamily);
         const textColor = "black";
+        const maxWidth = canvas.width; // Maximum width for text
 
         // Set font properties
         ctx.font = `${fontSize}px ${selectedFontFamily}`;
@@ -27,14 +28,50 @@ document.addEventListener("DOMContentLoaded", function () {
         // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+        // Split the text into lines that fit the canvas width
+        const lines = [];
+        let currentLine = "";
+        const words = bataktext.split(" ");
+        for (const word of words) {
+            const currentText = currentLine === "" ? word : currentLine + " " + word;
+            const textMetrics = ctx.measureText(currentText);
+            if (textMetrics.width <= maxWidth) {
+                currentLine = currentText;
+            } else {
+                lines.push(currentLine);
+                currentLine = word;
+            }
+        }
+        lines.push(currentLine);
+
+        // Calculate text position
+        //let y = canvas.height / 2 - (lines.length * fontSize) / 2;
+        let y = canvas.height - (lines.length * fontSize) / 2;
+
+        // Draw each line on the canvas
+        for (const line of lines) {
+            const textMetrics = ctx.measureText(line);
+            const textWidth = textMetrics.width;
+            const x = (canvas.width - textWidth) / 2;
+
+            // Draw the text on the canvas
+            ctx.fillText(line, x, y);
+
+            // Move to the next line
+            y += fontSize;
+        }
+
+
         // Calculate text size and position
+        /*
         const textMetrics = ctx.measureText(bataktext);
         const textWidth = textMetrics.width;
         const x = (canvas.width - textWidth) / 2;
         const y = canvas.height / 2 + fontSize / 2;
+*/
 
         // Draw the text on the canvas
-        ctx.fillText(bataktext, x, y);
+        //ctx.fillText(bataktext, x, y);
 
         // Convert the canvas to an image
         const dataURL = canvas.toDataURL("image/png");

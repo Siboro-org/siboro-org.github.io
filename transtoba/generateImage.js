@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Calculate text position
         //let y = canvas.height / 2 - (lines.length * fontSize) / 2;
-        let y = canvas.height - (lines.length * fontSize) / 2;
+        let y=0;
 
         // Draw each line on the canvas
         for (const line of lines) {

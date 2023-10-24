@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const fontFamily = document.getElementById("fontSelector");
         const selectedFontFamily = fontFamily.value;
 
-        console.log("Font selected: " + bataktext);
+        console.log("Font selected: " + selectedFontFamily);
         const textColor = "black";
 
         // Set font properties

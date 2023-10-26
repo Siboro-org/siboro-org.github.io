@@ -249,7 +249,7 @@ async function apply_transtoba() {
 										cache += tt_out[z];
 										x += tt_range[z];
 										ready = true;
-										confole.log("apply_transtoba: z="+z+", tt_in[z] : "+ tt_in[z]);
+										console.log("apply_transtoba: z="+z+", tt_in[z] : "+ tt_in[z]);
 										console.log("apply_transtoba: tt_in[z].charAt(0) === '^', ready=" + ready + ", out=" + out);
 									}
 								}
@@ -263,7 +263,7 @@ async function apply_transtoba() {
 										"^" + tt_in[z] + ".*"
 									)
 								) {
-									confole.log("apply_transtoba: z="+z+", tt_in[z] : "+ tt_in[z]);
+									console.log("apply_transtoba: z="+z+", tt_in[z] : "+ tt_in[z]);
 									out += tt_out[z];
 									cache += tt_out[z];
 									//console.log("apply_transtoba: x="+x+", tt_range[z]="+tt_range[z]);

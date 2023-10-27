@@ -1,4 +1,6 @@
         0       1    -         -
+	0	3    ^ING$			ᯀᯪᯰ
+	0	3    ^UNG$			ᯀᯮᯰ
 	0	1    ^I(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)		ᯤ
 	0	1    ^U(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)		ᯥ
 	-1	1    [AEIOU]I(?!MB|ND|NJ|MP|NS|NT|NGG|NGK)	ᯤ

@@ -90,7 +90,7 @@
 	0	4    DUNG([^AEIOU]|$)			ᯑᯮᯰ
 	0	4    RUNG([^AEIOU]|$)			ᯒᯮᯰ
 	0	4    MUNG([^AEIOU]|$)			ᯔᯮᯰ
-	0	4    TUNG([^AEIOU]|$)			ᯎᯮᯰ
+	0	4    TUNG([^AEIOU]|$)			ᯖᯮᯰ
 	0	4    SUNG([^AEIOU]|$)			ᯘᯮᯰ
 	0	4    CUNG([^AEIOU]|$)			ᯘ᯦ᯮᯰ
 	0	4    YUNG([^AEIOU]|$)			ᯛᯮᯰ

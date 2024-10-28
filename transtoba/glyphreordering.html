@@ -159,16 +159,9 @@
       font-style: normal;
     }
 
-    @font-face {
-      font-family: 'Batak Toba Vitus Polikarpus';
-      src: url('Tobaunicode-Regular1.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
 @font-face {
-  font-family: 'Batak Toba Modifikasi Vitus Polikarpus';
-  src: url('Toba Modifikasi.ttf') format('truetype');
+  font-family: 'Batak Toba Vitus Polikarpus';
+  src: url('Tobaunicode-Regular1.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -179,23 +172,6 @@
   </style>
 
   <title>Transliterator Indonesia ke Batak Toba</title>
-  <script src="./transtoba2.js"></script>
-  <script src="./generateImage.js"></script>
-  <style>
-    .custom-font-textarea {
-      font-family: 'Noto Sans Batak Regular', sans-serif;
-    }
-  </style>
-  <style>
-    textarea {
-      font-family: 'Noto Sans Batak', sans-serif;
-    }
-
-    body {
-      font-family: 'Noto Sans Batak', sans-serif;
-    }
-  </style>
-
   <link href="sign-in.css" rel="stylesheet">
 
   <!-- Google AdSense -->
@@ -208,97 +184,37 @@
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
   <main class="form-signin w-100 m-auto">
-    <h1 class="h3 mb-3 fw-normal">Transliterator Indonesia ke Batak Toba</h1>
-    <p>Transliterasi ini mengikuti <a href="glyphreordering.html">aturan penulisan</a> font Google (Noto Sans Batak) yang melakukan <i>glyph reordering</i>.
-    </p>
-    <div class="form-floating">
-      <textarea class="form-control" id="input" rows="10" cols="50" style="width: 100%;"></textarea>
-      <label for="input">Kata-kata/kalimat dalam bahasa Indonesia</label><br>
+    <h1 class="h3 mb-3 fw-normal">Aturan penulisan font Google</h1>
 
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="outputwithspace" value="yes">
-        <label class="form-check-label" for="checkbox">Tulis Surat Batak dengan spasi</label>
-      </div>
-
-      <button class="btn btn-danger w-50 py-1" id="clearInput">Hapus</button><button class="btn btn-primary w-50 py-1"
-        id="transliterate">Transliterasi</button><br>
-    </div>
-    <p></p>
-    <div class="form-floating">
-      <textarea class="form-control" id="output" rows="10" cols="50" style="width: 100%;" readonly></textarea>
-      <label for="output">Hasil transliterasi ke Surat Batak</label>
-
-      <div>
-        <label for="fontSelector">Pilih Font:</label>
-        <select class="form-select form-select-sm" id="fontSelector" onchange="changeFont()">
-          <option value="Noto Sans Batak">Noto Sans Batak (oleh Google)</option>
-          <option value="Roboto">Roboto (oleh Google)</option>
-          <option value="Roboto Flex">Roboto Flex (oleh Google)</option>
-          <option value="SF Pro">SF Pro (oleh Apple)</option>
-          <option value="Batak Unicode Regular">Batak Unicode Regular (oleh Uli Kozok)</option>
-          <option value="Pangururan">Pangururan (oleh Michael Everson)</option>
-          <option value="Kurinto Book Regular">Kurinto (oleh Kurinto.com)</option>
-          <option value="Equator Petite Edition">Equator Petite Edition (oleh Rizal Leksono)</option>
-          <option value="Batak Toba Jonson Sirait">Batak Toba (oleh Jonson Sirait)</option>
-          <option value="Batak Toba Vitus Polikarpus">Batak Toba (oleh Vitus Polikarpus)</option>
-          <option value="Batak Toba Modifikasi Vitus Polikarpus">Batak Toba Modifikasi (oleh Vitus Polikarpus)</option>
-        </select>
-      </div>
-
-      <script>
-        // Function to change the font of the textarea based on the selected option
-        function changeFont() {
-          const fontSelector = document.getElementById("fontSelector");
-          const selectedFont = fontSelector.value;
-          //const inputTextArea = document.getElementById("input");
-          const outputTextArea = document.getElementById("output");
-
-          //inputTextArea.style.fontFamily = selectedFont;
-          outputTextArea.style.fontFamily = selectedFont;
-        }
-      </script>
-
-      <p id="copyresult"></p>
-      <button class="btn btn-secondary w-50 py-1" id="generateImage">Tampilkan image</button><button
-        class="btn btn-secondary w-50 py-1" id="copyToClipboard">Salin ke Clipboard</button><br>
-
-      <canvas id="textCanvas" width="400" height="200" style="display: none;"></canvas>
-
-      <a id="downloadLink" style="display: none;" download="batak_image.png">
-        <img id="outputImage" style="cursor: pointer;" />
-    </a>
-    </div>
-
+    <div>Kembali ke <a href="index.html">halaman utama</a></div>
     <div>
+
+    <p></p>
       <p>
-        <br>
-        (Lihat informasi mengenai transliterator ini di <a href="informasi.html">halaman Informasi</a>)
+        Glyph reordering di font adalah fitur dari font tersebut yang saat menampilkan hasil ketikan 
+        otomatis mengubah posisi aksara. Di font Noto Sans Batak, ini dilakukan pada suku kata yang diakhiri 
+        dengan pangolat. Misalnya, untuk menulis "sip" dengan aksara Batak Toba, biasanya kita menulis:
+        </p>
+        <ul><li>aksara "sa", aksara "pi" lalu diikuti pangolat</li>
+        </ul>
+       sehingga dibaca "sip", bukan 
+
+       <ul><li>"sa"+ anak ni surat "i"+"pa"+pangolat</li>
+        </ul>
+        <p>
+        Namun karena font Noto Sans Batak melakukan glyph reordering, maka aturan penulisan menjadi 
+        <ul><li>"si"+anak ni surat "i"+"pa"+pangolat</li>
+          </ul>
+Tampilan akan benar jika menggunakan font Noto Sans Batak, atau font lain yang juga melakukan glyph reordering yang sama.
+
       </p>
     </div>
+    <div>Komentar dll bisa ditujukan ke <a href="https://www.facebook.com/taromboapp/">sini</a> melalui Facebook
+      Messenger</div>
+    <p></p>
+    <div>Kembali ke <a href="index.html">halaman utama</a></div>
   </main>
 
-  <script>
-    document.getElementById("clearInput").addEventListener("click", function () {
-      const inputTextArea = document.getElementById("input");
-      inputTextArea.value = ""; // Clear the content of the input textarea
-    });
-
-    function displayResult(resultText) {
-      const resultElement = document.getElementById("copyresult");
-      resultElement.innerHTML = resultText;
-      setTimeout(() => {
-        resultElement.innerHTML = '';
-      }, 1000);
-    }
-
-    document.getElementById("copyToClipboard").addEventListener("click", function () {
-      const outputTextArea = document.getElementById("output");
-      outputTextArea.select();
-      document.execCommand("copy");
-      displayResult("Teks berhasil disalin ke clipboard!");
-      //alert("Teks berhasil disalin ke clipboard!");
-    });
-  </script>
 
 
 

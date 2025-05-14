@@ -2,15 +2,15 @@
 <html lang="en" data-bs-theme="auto">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HERXDGLCNY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HERXDGLCNY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-HERXDGLCNY');
-</script>
+    gtag('config', 'G-HERXDGLCNY');
+  </script>
 
   <meta charset="UTF-8">
   <script src="../assets/js/color-modes.js"></script>
@@ -166,12 +166,19 @@
       font-style: normal;
     }
 
-@font-face {
-  font-family: 'Batak Toba Modifikasi Vitus Polikarpus';
-  src: url('Toba Modifikasi.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+    @font-face {
+      font-family: 'Batak Toba Modifikasi Vitus Polikarpus';
+      src: url('Toba Modifikasi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans　Batak Modifikasi Vitus Polikarpus';
+      src: url('NotoSansBatak-Modifikasi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
     .custom-font-textarea {
       font-family: 'Batak Unicode Regular', sans-serif;
@@ -209,7 +216,8 @@
 
   <main class="form-signin w-100 m-auto">
     <h1 class="h3 mb-3 fw-normal">Transliterator Indonesia ke Batak Toba</h1>
-    <p>Transliterasi ini mengikuti <a href="glyphreordering.html">aturan penulisan</a> font Google (Noto Sans Batak) yang melakukan <i>glyph reordering</i>.
+    <p>Transliterasi ini mengikuti <a href="glyphreordering.html">aturan penulisan</a> font Google (Noto Sans Batak)
+      yang melakukan <i>glyph reordering</i>.
     </p>
     <div class="form-floating">
       <textarea class="form-control" id="input" rows="10" cols="50" style="width: 100%;"></textarea>
@@ -242,6 +250,7 @@
           <option value="Batak Toba Jonson Sirait">Batak Toba (oleh Jonson Sirait)</option>
           <option value="Batak Toba Vitus Polikarpus">Batak Toba (oleh Vitus Polikarpus)</option>
           <option value="Batak Toba Modifikasi Vitus Polikarpus">Batak Toba Modifikasi (oleh Vitus Polikarpus)</option>
+          <option value="Noto Sans　Batak Modifikasi Vitus Polikarpus">Noto Sans　Batak Modifikasi (oleh Vitus Polikarpus)</option>
         </select>
       </div>
 
@@ -266,7 +275,7 @@
 
       <a id="downloadLink" style="display: none;" download="batak_image.png">
         <img id="outputImage" style="cursor: pointer;" />
-    </a>
+      </a>
     </div>
 
     <div>
